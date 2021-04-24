@@ -48,7 +48,6 @@ nav li:not(:last-child) {
 }
 
 /* header-bottom */
-
 .jumbotron {
     height: 500px;
     width: 100%;
@@ -93,4 +92,62 @@ nav li:not(:last-child) {
 
 .main-title-container h2 {
     font-size: 40px;
+}
+
+/* floating area */
+.floating-area {
+    height: 600px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.floating-area::after {
+    content: '';
+    display: table;
+    clear: both
+}
+
+aside {
+    float: left;
+    width: 25%;
+}
+
+.aside-top-1 {
+    height: 200px;
+    width: 100%;
+    background-image: url(../img/img-1.jpg);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 8px;
+    filter: brightness(80%);
+}
+
+.floating-area .section-top {
+    float: left;
+    width: 46%;
+    height: 200px;
+    margin: 0 2%;
+    background-image: url(../img/banner-2.jpg);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 8px;
+    filter: brightness(80%);
+}
+
+.aside-top-2 {
+    height: 200px;
+    width: 100%;
+    background-image: url(../img/img-3.jpg);
+    background-position: center center;
+    background-size: auto 100%;
+    border-radius: 8px;
+    filter: brightness(80%);
+}
+
+/* footer */
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: lightsalmon;
+    margin-top: 10px;
 }
