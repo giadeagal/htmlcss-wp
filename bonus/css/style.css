@@ -16,10 +16,15 @@
 
 /* container */
 .container {
-    margin: 0px 10%;
+    margin: 0px 5%;
 }
 
 /* header-top*/
+.header-top,
+nav {
+    margin-left: 25px;
+}
+
 header img {
     width: 180px;
     border-right: 1px solid lightgray;
@@ -50,20 +55,20 @@ nav li:not(:last-child) {
 /* header-bottom */
 .jumbotron {
     width: 100%;
-    background-image: url(../img/banner.jpg);
+    background-image: url(../../img/2742190.jpg);
     background-position: center center;
+    background-size: cover;
     border-radius: 8px;
-    position: relative;
     border-radius: 8px;
 }
 
 .overlay {
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
     border-radius: 8px;
     position: relative;
-    padding: 26% 47% 10% 5%;
+    padding: 20% 47% 5% 5%;
 }
 
 .jumbotron p {
@@ -82,7 +87,7 @@ nav li:not(:last-child) {
 
 /* main */
 .main-title-container {
-    padding: 50px 0px;
+    padding: 50px 25px;
 }
 
 .main-title-container p {
@@ -97,6 +102,7 @@ nav li:not(:last-child) {
 .floating-area {
     width: 100%;
     border-radius: 8px;
+    height: 800px;
 }
 
 .floating-area::after {
@@ -110,32 +116,69 @@ nav li:not(:last-child) {
     margin: 15px 0px;
 }
 
-aside {
+.floating-area section {
     float: left;
-    width: 25%;
+    width: 30%;
 }
 
-.aside-top-1 {
-    height: 200px;
+.floating-area section.middle {
+    margin: 0px 5%;
+}
+
+.section-top-1 {
+    height: 250px;
     width: 100%;
-    background-image: url(../img/img-1.jpg);
+    background-image: url(../../img/img-1.jpg);
     background-position: center center;
     background-size: cover;
     border-radius: 8px;
     filter: brightness(80%);
 }
 
-/* section */
-.floating-area section {
-    float: left;
-    width: 46%;
-    margin: 0 2%;
+.section-top-2 {
+    height: 250px;
+    width: 100%;
+    background-image: url(../../img/img-2.jpg);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 8px;
+    filter: brightness(80%);
 }
 
-.section-top {
-    height: 200px;
+.section-top-3 {
+    height: 250px;
     width: 100%;
-    background-image: url(../img/banner-2.jpg);
+    background-image: url(../../img/img-3.jpg);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 8px;
+    filter: brightness(80%);
+}
+
+.section-top-4 {
+    height: 250px;
+    width: 100%;
+    background-image: url(../../img/img-4.jpg);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 8px;
+    filter: brightness(80%);
+}
+
+.section-top-5 {
+    height: 250px;
+    width: 100%;
+    background-image: url(../../img/img-5.jpg);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 8px;
+    filter: brightness(80%);
+}
+
+.section-top-6 {
+    height: 250px;
+    width: 100%;
+    background-image: url(../../img/img-6.jpg);
     background-position: center center;
     background-size: cover;
     border-radius: 8px;
@@ -143,21 +186,22 @@ aside {
 }
 
 .section-bottom {
-    width: 100%;
+    padding: 5%;
 }
 
-.aside-top-2 {
-    height: 200px;
-    width: 100%;
-    background-image: url(../img/img-3.jpg);
-    background-position: center center;
-    background-size: auto 100%;
-    border-radius: 8px;
-    filter: brightness(80%);
-}
-
-.aside-bottom, .section-bottom {
+.section-bottom {
     color: #aeaeae;
+}
+
+.floating-area section p.mini{
+    font-size: 8px;
+}
+
+.floating-area section .mini::before {
+    content: url(../../img/me.jpg);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
 }
 
 /* footer */
