@@ -119,6 +119,7 @@ nav li:not(:last-child) {
 .floating-area section {
     float: left;
     width: 30%;
+    height: 600px;
 }
 
 .floating-area section.middle {
@@ -193,27 +194,41 @@ nav li:not(:last-child) {
     color: #aeaeae;
 }
 
-.floating-area section p.mini{
-    font-size: 8px;
-}
-
-.floating-area section .mini::before {
-    content: url(../../img/me.jpg);
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-}
-
-/* footer */
-footer {
-    height: 50px;
+.mini-floating-area {
     width: 100%;
-    margin-top: 10px;
-    text-align: center;
-    line-height: 50px;
+    padding-top: 5%;
 }
 
-footer::after {
-    content: '\2665';
-    color: red;
+.mini-floating-area::after {
+    content: '';
+    display: table;
+    clear:both;
+}
+
+.mini-floating-area strong{
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.mini-floating-area p,
+.mini-floating-area img {
+    float: left;
+}
+
+.mini-floating-area {
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+.mini-floating-area p.a {
+    padding-right: 10px;
+    border-right: 1px solid gray ;
+}
+
+.mini-floating-area p.b {
+    margin-left: 10px;
+}
+
+.mini-floating-area img {
+    border-radius: 50%;
 }
