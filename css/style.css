@@ -127,10 +127,10 @@ aside {
     filter: brightness(80%);
 }
 
-.floating-area .section {
+/* section */
+.floating-area section {
     float: left;
     width: 46%;
-    height: 200px;
     margin: 0 2%;
 }
 
