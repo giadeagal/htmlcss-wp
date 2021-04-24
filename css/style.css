@@ -5,10 +5,19 @@
     margin: 0px;
 }
 
+/* font */
+.noto {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* container */
 .container {
     margin: 0px 10%;
 }
-
 
 /* header-top*/
 header img {
@@ -21,7 +30,6 @@ ul {
     list-style-type: none;
     margin: 30px 0px;
     padding: 0px;
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
 
@@ -40,10 +48,36 @@ nav li:not(:last-child) {
 }
 
 /* header-bottom */
+
 .jumbotron {
     height: 500px;
     width: 100%;
     background-image: url(../img/banner.jpg);
     background-position: center center;
     border-radius: 8px;
+    position: relative;
+    border-radius: 8px;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    position: relative;
+    padding: 26% 47% 10% 5%;
+}
+
+.jumbotron p {
+    color: white;
+}
+
+.jumbotron p .jumbo-title {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.jumbotron p .jumbo-subtitle {
+    font-size: 18px;
+    font-weight: 200;
 }
