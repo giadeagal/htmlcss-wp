@@ -81,3 +81,16 @@ nav li:not(:last-child) {
     font-size: 18px;
     font-weight: 200;
 }
+
+/* main */
+.main-title-container {
+    padding: 50px 0px;
+}
+
+.main-title-container p {
+    color: #adadad;
+}
+
+.main-title-container h2 {
+    font-size: 40px;
+}
