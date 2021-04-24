@@ -49,7 +49,6 @@ nav li:not(:last-child) {
 
 /* header-bottom */
 .jumbotron {
-    height: 500px;
     width: 100%;
     background-image: url(../img/banner.jpg);
     background-position: center center;
@@ -96,7 +95,6 @@ nav li:not(:last-child) {
 
 /* floating area */
 .floating-area {
-    height: 600px;
     width: 100%;
     border-radius: 8px;
 }
@@ -167,8 +165,14 @@ aside {
 
 /* footer */
 footer {
-    height: 100px;
+    height: 50px;
     width: 100%;
-    background-color: lightsalmon;
     margin-top: 10px;
+    text-align: center;
+    line-height: 50px;
+}
+
+footer::after {
+    content: '\2665';
+    color: red;
 }
